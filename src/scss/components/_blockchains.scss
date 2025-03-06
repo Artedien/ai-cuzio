@@ -1,0 +1,311 @@
+.blockchains {
+    // .blockchains__container
+
+    &__container {
+    }
+
+    // .blockchains__inner
+
+    &__inner {
+    }
+
+    // .blockchains__list
+
+    &__list {
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 42.7rem 10rem 42.7rem;
+        @include small-tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+        }
+    }
+
+    // .blockchains__list-item
+
+    &__list-item {
+    }
+
+    // .blockchains__item-unique
+
+    &__item-unique {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        position: relative;
+        background: #fff linear-gradient(to right, #d702d7c0, #ff4400c2);
+        display: flex;
+        width: 87.3rem;
+        height: 54.7rem;
+        padding: 8rem;
+        border-radius: 4rem;
+        @include small-tablet {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            background: none;
+            padding: 0;
+            gap: 1.6rem;
+        }
+    }
+
+    // .blockchains__item-unique-wrapper
+
+    &__item-unique-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        @include small-tablet {
+            background: #fff linear-gradient(to right, #d702d7c0, #ff4400c2);
+            padding: 8.2rem;
+            border-radius: 8rem;
+            align-items: center;
+        }
+    }
+
+    // .blockchains__item-title-box
+
+    &__item-title-box {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include small-tablet {
+            gap: 4rem;
+        }
+    }
+
+    // .blockchains__item-btn-box-unique
+
+    &__item-btn-box-unique {
+        max-width: 32rem;
+        @include small-tablet {
+            max-width: 100%;
+        }
+    }
+
+    // .blockchains__unique-item-title
+
+    &__unique-item-title {
+        max-width: 42.6rem;
+        font-family: 'PP Pangram Sans Rounded', sans-serif;
+        font-weight: 400;
+        font-size: 4.8rem;
+        line-height: 110%;
+        color: #fff;
+        @include small-tablet {
+            max-width: 100%;
+            font-size: 7.2rem;
+        }
+    }
+
+    // .blockchains__item-title
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 120%;
+        font-family: 'PP Pangram Sans Rounded', sans-serif;
+        @include small-tablet {
+            font-size: 6.4rem;
+        }
+    }
+
+    // .blockchains__item-btn-box
+
+    &__item-btn-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        @include small-tablet {
+            gap: 2.4rem;
+        }
+    }
+
+    // .blockchains__item-btn
+
+    &__item-btn {
+        font-family: 'Geometria', sans-serif;
+        font-weight: 500;
+        font-size: 1.7rem;
+        line-height: 140%;
+        color: #220150;
+        padding: 0.8rem 1.6rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        @include small-tablet {
+            font-size: 3.4rem;
+            padding: 1.6rem 3.2rem;
+            border-radius:2rem;
+        }
+    }
+
+    // .blockchains__unique-img-box
+
+    &__unique-img-box {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 45rem;
+        height: 62.4rem;
+        @include small-tablet {
+            position: static;
+            position: relative;
+            width: 100%;
+            height: 81.6rem;
+            background: #fff linear-gradient(to right, #d702d7c0, #ff4400c2);
+            border-radius: 8rem;
+        }
+    }
+
+    // .blockchains__unique-img
+
+    &__unique-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include small-tablet {
+            height: 94rem;
+        }
+    }
+
+    // .blockchains__unique-img-wrapper
+
+    &__unique-img-wrapper {
+        @include small-tablet {
+            position: absolute;
+            bottom: 0;
+            left: 6rem;
+        }
+    }
+
+    // .blockchains__item-blockchains
+
+    &__item-blockchains {
+        display: flex;
+        flex-direction: column;
+        padding: 6rem;
+        border: 1px solid #e6e6e6;
+        border-radius: 4rem;
+        max-width: 42.7rem;
+        @include small-tablet {
+            max-width: 100%;
+            padding: 10rem;
+            border-radius:8rem;
+        }
+    }
+
+    // .blockchains__item-blockchains-purple
+
+    &__item-blockchains-purple {
+        background: linear-gradient(to bottom, #ffffff, #ff99ccc4);
+        gap: 13.9rem;
+        @include small-tablet {
+            gap: 8rem;
+        }
+    }
+
+    // .blockchains__item-blockchains-blue
+
+    &__item-blockchains-blue {
+        background: linear-gradient(to bottom, #ffffff, #99f1ffac);
+        gap: 5.1rem;
+    }
+
+    // .blockchains__item-disc
+
+    &__item-disc {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 140%;
+        @include small-tablet {
+
+            font-size: 2.8rem;
+        }
+    }
+
+    // .blockchains__item-community
+
+    &__item-community {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        padding: 6rem;
+        max-width: 42.6rem;
+        border-radius: 4rem;
+        border: solid 1px #000;
+        @include small-tablet {
+        max-width: 100%;
+        padding: 10rem;
+        gap: 13.2rem;
+        border-radius:8rem;
+
+        }
+    }
+
+    // .blockchains__community-img-box
+
+    &__community-img-box {
+        width: 6rem;
+        height: 6.1rem;
+        @include small-tablet {
+        width: 12rem;
+        height: 12.1rem;
+        }
+    }
+
+    // .blockchains__community-img
+
+    &__community-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    // .blockchains__item-innovative
+
+    &__item-innovative {
+    }
+
+    // .blockchains__item-social
+
+    &__item-social {
+        grid-row: 2/3;
+        position: relative;
+        border-radius: 4rem;
+        width: 42.7rem;
+        height: 54.7rem;
+        display: flex;
+        flex-direction: column;
+        padding: 6rem;
+        background: radial-gradient(circle, #c93bfd, #221a2e);
+        @include small-tablet {
+            width: 100%;
+            height: 104.4rem;
+            border-radius:8rem;
+            padding: 10rem;
+        }
+    }
+
+    // .blockchains__social-img-box
+
+    &__social-img-box {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        // width: 40.4rem;
+    }
+
+    // .blockchains__social-img
+
+    &__social-img {
+    }
+
+    // .blockchains__title-white
+
+    &__title-white {
+        color: #fff;
+    }
+}
+.container {
+}

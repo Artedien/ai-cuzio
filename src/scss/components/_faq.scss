@@ -1,0 +1,133 @@
+.faq {
+    padding: 23.1rem 0 23.1rem 0;
+    // .faq__container
+
+    &__container {
+    }
+
+    // .faq__inner
+
+    &__inner {
+        font-family: 'PP Pangram Sans Rounded', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6.8rem;
+    }
+
+    // .faq__title-box
+
+    &__title-box {
+        display: flex;
+    }
+
+    // .faq__title
+
+    &__title {
+        font-weight: 400;
+        font-size: 4.8rem;
+        line-height: 100%;
+        text-align: center;
+        @include small-tablet {
+            font-size: 7.2rem;
+        }
+    }
+
+    // .faq__accordion-wrapper
+
+    &__accordion-wrapper {
+        display: flex;
+        flex-direction: column;
+        @include small-tablet {
+        }
+    }
+
+    // .faq__accordion
+
+    &__accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    // .faq__accordion-item
+
+    &__accordion-item {
+        display: flex;
+        flex-direction: column;
+        gap: 2.1rem;
+        border: 1px solid #e6e6e6;
+        border-radius: 5rem;
+        padding: 3rem 6rem 1rem;
+        @include small-tablet {
+            gap: 4.2rem;
+            border-radius: 10rem;
+        }
+    }
+
+    // .faq__accordion-item-header
+
+    &__accordion-item-header {
+        display: flex;
+        justify-content: space-between;
+        &.active .faq__accordion-svg-wrapper {
+        }
+        &.active .faq__accordion-svg-box {
+            transform: rotate(-180deg);
+            & svg {
+            }
+        }
+        &.active ~ .faq__accordion-count {
+            height: 20.5rem;
+        }
+        &.active + .faq__accordion-item-body {
+            margin-bottom: 2rem;
+        }
+    }
+
+    // .faq__accordion-title
+
+    &__accordion-title {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 120%;
+        @include small-tablet {
+            font-size: 4rem;
+        }
+    }
+
+    // .faq__accordion-svg-wrapper
+
+    &__accordion-svg-wrapper {
+    }
+
+    // .faq__accordion-svg-box
+
+    &__accordion-svg-box {
+        transition: transform 0.3s;
+    }
+
+    // .faq__accordion-item-body
+
+    &__accordion-item-body {
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 140%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s, margin-bottom 0.3s;
+        width: 86rem;
+        @include small-tablet {
+            font-size: 2.8rem;
+            width: 100%;
+        }
+    }
+
+    // .faq__accordion-item-body-content
+
+    &__accordion-item-body-content {
+    }
+}
+
+.container {
+}

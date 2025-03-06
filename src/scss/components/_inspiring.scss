@@ -1,0 +1,207 @@
+.inspiring {
+    // .inspiring__container
+    padding: 11.65rem 0 12.5rem 0;
+    &__container {
+    }
+
+    // .inspiring__inner
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+        @include small-tablet {
+            gap: 6.4rem;
+        }
+    }
+
+    // .inspiring__title-box
+
+    &__title-box {
+        display: flex;
+    }
+
+    // .inspiring__title
+
+    &__title {
+        font-family: 'PP Pangram Sans Rounded', sans-serif;
+        font-weight: 400;
+        font-size: 4.8rem;
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: #221a2e;
+        @include small-tablet {
+            font-size: 7.2rem;
+        }
+    }
+
+    // .inspiring__tab-box
+
+    &__tab-box {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    // .inspiring__tab-btn-box
+
+    &__tab-btn-box {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    // .inspiring__tab-btn-list
+
+    &__tab-btn-list {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        @include small-tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    // .inspiring__tab-btn
+
+    &__tab-btn {
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 135%;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: #221a2e;
+        padding: 1.5rem 3rem;
+        border: 1px solid #e6e6e6;
+        border-radius: 3rem;
+        transition: border 0.5s, color 0.5s;
+        &::before {
+            content: '';
+            background: linear-gradient(0deg, #b0f6ff 0%, #fff 100%);
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        &.active {
+            border: 1px solid #2ce1f8;
+            &::before {
+                opacity: 1;
+            }
+        }
+        @include small-tablet {
+            padding: 3rem 6rem;
+            border-radius: 6rem;
+        }
+    }
+
+    // .inspiring__tab-btn-link
+
+    &__tab-btn-link {
+        @include small-tablet {
+            font-size: 3rem;
+        }
+    }
+
+    // .inspiring__tab-content-box
+
+    &__tab-content-box {
+        display: grid;
+    }
+
+    // .inspiring__tab-content
+
+    &__tab-content {
+        opacity: 0;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        transition: opacity 0.5s;
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    // .inspiring__swiper-box
+
+    &__swiper-box {
+        width: 192rem;
+        @include small-tablet{
+            // width: 100%;
+        }
+    }
+
+    // .inspiring__swiper
+
+    &__swiper {
+    }
+
+    // .inspiring__swiper-wrapper
+
+    &__swiper-wrapper {
+        display: flex;
+        margin-left: -2.6rem;
+    }
+
+    // .inspiring__swiper-slide
+
+    &__swiper-slide {
+        display: flex !important;
+        flex-direction: column;
+        gap: 2.7rem;
+        align-items: center;
+    }
+
+    // .inspiring__slide-img-box
+
+    &__slide-img-box {
+        border-radius: 4rem;
+        width: 31.5rem;
+        height: 42rem;
+        overflow: hidden;
+        @include small-tablet {
+            width: 63rem;
+            height: 84rem;
+            border-radius:8rem;
+        }
+    }
+
+    // .inspiring__slide-img
+
+    &__slide-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    // .inspiring__slide-text
+
+    &__slide-text {
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 120%;
+        color: #221a2e;
+        @include small-tablet {
+            font-size: 4rem;
+        }
+    }
+}
+.container {
+}
+.active {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
