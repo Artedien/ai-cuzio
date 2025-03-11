@@ -1,4 +1,4 @@
-<h1>UNICLET </h1> 
+<h1>ai-cuzio </h1> 
 
 <h2>🛠️ Use Skills:</h2>  
 
@@ -12,7 +12,7 @@
 
 ---
 
-[Demo Link <br>![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://artedien.github.io/UNICLET/dist)
+[Demo Link <br>![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://artedien.github.io/ai-cuzio/dist)
 
 
 <h2>📱 My contacts:</h2> 
