@@ -7,6 +7,8 @@ import inspiringSwiper from './js/components/inspiringSwiper';
 import mainTabs from './js/components/inspiringTabs';
 import marketplace from './js/components/marketplace';
 import faq from './js/components/faq';
+import mainAnim from './js/components/mainAnim';
+import unleashAnim from './js/components/unleashAnim';
 
 window.addEventListener('DOMContentLoaded', () => {
     try {
@@ -26,5 +28,11 @@ window.addEventListener('DOMContentLoaded', () => {
     } catch {}
     try {
         faq();
+    } catch {}
+    try {
+        mainAnim();
+    } catch {}
+    try {
+        unleashAnim();
     } catch {}
 });
