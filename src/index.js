@@ -9,6 +9,9 @@ import marketplace from './js/components/marketplace';
 import faq from './js/components/faq';
 import mainAnim from './js/components/mainAnim';
 import unleashAnim from './js/components/unleashAnim';
+import inspiringAnim from './js/components/inspiringAnim';
+import marketplaceAnim from './js/components/marketplaceAnim';
+import blockchainsAnim from './js/components/blockchainsAnim';
 
 window.addEventListener('DOMContentLoaded', () => {
     try {
@@ -34,5 +37,14 @@ window.addEventListener('DOMContentLoaded', () => {
     } catch {}
     try {
         unleashAnim();
+    } catch {}
+    try {
+        inspiringAnim();
+    } catch {}
+    try {
+        marketplaceAnim();
+    } catch {}
+    try {
+        blockchainsAnim();
     } catch {}
 });

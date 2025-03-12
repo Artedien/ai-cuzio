@@ -1,6 +1,8 @@
 .header {
     // .header__container
-
+    position: relative;
+    z-index: 500;
+    transform: translateY(0);
     &__container {
         padding: 3.6rem 0;
         font-family: 'Poppins', sans-serif;
@@ -53,12 +55,15 @@
             position: fixed;
             width: 100%;
             height: 100%;
-            inset: 0;
-            padding:18rem 7.2rem 10rem;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            height: 100dvh;
+            padding: 18rem 7.2rem 10rem;
             transform: translateY(-150%);
             // transition: transform 0.5s;
             background-color: #fff;
-            &.active{
+            &.active {
                 transform: translateY(0);
             }
         }
@@ -73,7 +78,7 @@
         border: 1px solid #e6e6e6;
         border-radius: 3rem;
         padding: 1.1rem 3.3rem 1.1rem 1.4rem;
-        @include small-tablet{
+        @include small-tablet {
             display: none;
         }
     }
@@ -107,7 +112,7 @@
         display: flex;
         align-items: center;
         gap: 3rem;
-        @include small-tablet{
+        @include small-tablet {
             flex-direction: column;
             justify-content: space-between;
         }
@@ -118,11 +123,11 @@
     &__nav {
         display: flex;
         gap: 2.8rem;
-        @include small-tablet{
+        @include small-tablet {
             padding: 15rem 0 0 0;
             gap: 5rem;
             flex-direction: column;
-            align-items:center;
+            align-items: center;
             justify-content: space-between;
         }
     }
@@ -139,10 +144,9 @@
                 display: flex;
                 align-items: center;
                 gap: 1rem;
-                
             }
         }
-        @include small-tablet{
+        @include small-tablet {
             font-size: 7.2rem;
         }
     }
@@ -158,7 +162,7 @@
         display: flex;
         width: 1.8rem;
         height: 1.8rem;
-        @include small-tablet{
+        @include small-tablet {
             display: none;
         }
     }
@@ -175,10 +179,10 @@
     &__btn-box {
         display: flex;
         gap: 1.7rem;
-        @include small-tablet{
+        @include small-tablet {
             flex-direction: column;
             width: 100%;
-            gap:3.4rem;
+            gap: 3.4rem;
         }
     }
 
@@ -192,7 +196,7 @@
         text-align: center;
         padding: 1rem 2rem;
         border-radius: 2rem;
-        @include small-tablet{
+        @include small-tablet {
             border-radius: 6rem;
             font-size: 4.4rem;
             padding: 3rem 6rem;
@@ -205,7 +209,7 @@
     &__nav-img-box {
         width: 1rem;
         // height: 0.6rem;
-        @include small-tablet{
+        @include small-tablet {
             display: none;
         }
         & svg {
@@ -221,8 +225,8 @@
         display: flex;
         align-items: center;
         gap: 3rem;
-        @include small-tablet{
-            &::before{
+        @include small-tablet {
+            &::before {
                 display: none;
             }
         }
