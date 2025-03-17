@@ -12,6 +12,8 @@ import unleashAnim from './js/components/unleashAnim';
 import inspiringAnim from './js/components/inspiringAnim';
 import marketplaceAnim from './js/components/marketplaceAnim';
 import blockchainsAnim from './js/components/blockchainsAnim';
+import faqAnim from './js/components/faqAnim';
+import bannerAnim from './js/components/bannerAnim';
 
 window.addEventListener('DOMContentLoaded', () => {
     try {
@@ -46,5 +48,11 @@ window.addEventListener('DOMContentLoaded', () => {
     } catch {}
     try {
         blockchainsAnim();
+    } catch {}
+    try {
+        faqAnim();
+    } catch {}
+    try {
+        bannerAnim();
     } catch {}
 });

@@ -2,7 +2,13 @@ import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, ScrollToPlugin } from
 gsap.registerPlugin(ScrollTrigger);
 
 function blockchainsAnim() {
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: `.blockchains`,
+            start: 'top 50%',
+            end: 'bottom',
+            // markers: true
+        }});
 
     tl.from('.blockchains__item-unique', {
         x: '-20%',
